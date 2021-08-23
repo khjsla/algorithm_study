@@ -14,7 +14,9 @@ class Solution(object):
         print(x)
         return x
 
+
 #1980
+
 class Solution(object):
     def findDifferentBinaryString(self, nums):
         """
@@ -26,7 +28,7 @@ class Solution(object):
 
         
         # print((2**length)-1)
-        check_count = (2**length)-1
+        check_count = (2**length)
         check_list = []
         
         big_val = bin((2**length) - 1)[2:]
@@ -34,7 +36,7 @@ class Solution(object):
         
         print(big_val)
         
-        for x in range(check_count+1):
+        for x in range(check_count):
             now = bin(x)[2:]
             if(len(now) < length):
                 now.zfill(length)
