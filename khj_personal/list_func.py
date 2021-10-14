@@ -30,4 +30,39 @@ a.insert(2,10)
 print(a)
 print("----------------------------------")
 
-# insert(x,y) 로 x 자리뒤에 y 값 추가
+# insert(idx,val) 로 idx 자리뒤에 val 값 추가
+
+a = [1, 2, 3, 4, 5, 6, 7]
+print(a.pop()) # 맨뒤(오른쪽) pop
+print(a.pop(2)) # idx [2] 값 pop
+print("----------------------------------")
+
+# pop(idx) 로 idx번째 값 out
+
+a = [1,2,3]
+a.remove(2)
+print(a)
+print("----------------------------------")
+
+# remove(val) 로 val 값 없애기
+
+print(a.index(3))
+
+# index(val) 로 val의 idx(위치) 값 받음
+# *
+# 없는 값을 index 로 찾으려고 하면 [ERROR] 남
+# *
+
+a = [1,5,3,2,6,8,7,9]
+
+a.sort()
+print(a)
+
+a.sort(reverse=True)
+print(a)
+
+# sort() 로 오름차순 정렬
+# sort(reverse=True) 로 내림차순 정렬
+
+
+

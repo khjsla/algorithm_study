@@ -39,4 +39,13 @@ a = []
 b = list()
 
 c = a+b #리스트 + 가능
+
+a.append(val) # val 추가
+a.insert(idx,val) # idx 뒤에 val 추가
+
+a.pop() # 맨 뒤(오른) out
+a.pop(idx) # idx 위치 값 out
+a.remove(val) # val 값 out
+
+a.index(val) # val의 idx 위치 값
 ```
